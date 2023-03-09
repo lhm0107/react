@@ -1,0 +1,23 @@
+cdyarn create react-app 폴더명
+
+yarn add react-router-dom 설치
+
+
+yarn_create_react-app_으로_eslint에러시_실행
+
+yarn add eslint-config-react-app -D  실행
+
+.yarnrc.yml 생성
+
+파일안에 아래와 같이 작성 띄어쓰기 주의!!
+
+packageExtensions:
+  react-scripts@*:
+    peerDependencies:
+      eslint-config-react-app: '*'
+
+안된다면 
+
+yarn cach clean 으로 캐시삭제
+
+yarn install  으로 재설치 
